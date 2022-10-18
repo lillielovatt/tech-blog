@@ -1,0 +1,28 @@
+{
+  "name": "tech-blog",
+  "version": "1.0.0",
+  "description": "You're a tech aficionado and you want the world to know your thoughts. That new change at your company? Noted. The upset in the labor market? Discussed. Using Tech Blog, you can do it all--share articles, blogs, rants, thoughts, opinions. Whatever you like!",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lillielovatt/tech-blog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lillielovatt/tech-blog/issues"
+  },
+  "homepage": "https://github.com/lillielovatt/tech-blog#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.25.2"
+  }
+}
