@@ -9,7 +9,8 @@ const session = require("express-session");
 const SequelizeStore = require("connect-session-sequelize")(session.Store);
 
 const sess = {
-    secret: process.env.DB_SECRET,
+    secret: "secrets secrets are no fun",
+    // process.env.DB_SECRET originally had this but Heroku threw a fit so I have to reveal it :(
     cookie: {},
     resave: false,
     saveUninitialized: true,
