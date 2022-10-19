@@ -5,7 +5,10 @@ const sequelize = require("./config/connection");
 
 const app = express();
 const PORT = process.env.PORT || 3001;
+const path = require("path");
 
+// express.static() method is a built-in Express.js middleware function that can take all of the contents of a folder and serve them as static assets
+app.use(express.static(path.join(__dirname, "public")));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
