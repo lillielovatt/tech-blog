@@ -6,17 +6,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tech Blog</title>
   <link rel="stylesheet" href="/stylesheets/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <div class="wrapper">
      <header>
     <h1>
-      <a href="/">Tech Blog</a>
+      <a href="/" id="title">Tech Blog</a>
     </h1>
    <nav>
   {{#if loggedIn}}
-  <button id="logout" class="btn-no-style">logout</button>
+  <a href="/dashboard">dashboard</a>
+  <a id="logout" >logout</a>
   {{else}}
   <a href="/login">login</a>
   {{/if}}

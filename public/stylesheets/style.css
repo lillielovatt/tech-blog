@@ -1,18 +1,39 @@
 * {
     box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
   }
   
+  :root {
+    --primary: #ccdad1;
+    --secondary: #9caea9;
+    --tertiary: #788585;
+    --light-dark: #6f6866;
+    --dark: #38302e;
+    --border-radius: 0.3rem;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+
   body, html {
+    background-color: var(--primary);
     height: 100%;
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
+   font-family: 'Roboto Condensed', sans-serif;
+
     color: #333;
+  }
+
+  #title{
+    font-size:3rem;
+  }
+  nav{
+    font-size:1.5rem;
   }
   
   a {
     text-decoration: none;
-    color: #225ca3;
+    color: var(--light-dark);
+     /* #225ca3; */
     font-weight: bold;
     transition: color .1s;
   }
@@ -80,6 +101,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 1%;
+    margin:10px;
   }
   
   header h1 {
@@ -97,7 +119,8 @@
     padding: 0;
     cursor: pointer;
     text-decoration: none;
-    color: #225ca3;
+    /* color: #225ca3; */
+    color: #333;
     font-size: 100%;
     font-weight: bold;
     transition: color .1s;
@@ -120,6 +143,11 @@
   .post {
     margin-bottom: 2%;
     line-height: 150%;
+    font-size:18px;
+  }
+  #post-title{
+    font-size:20px;
+    font-weight:bold;
   }
   
   .post .title span {
@@ -131,15 +159,6 @@
   .edit-link {
     display: block;
     margin: -1.5% 0 2% 0;
-  }
-  
-  .upvote-btn {
-    background-color: #197d0f;
-    transition: background-color .1s;
-  }
-  
-  .upvote-btn:hover {
-    background-color: #1f9c13;
   }
   
   .comment-form {
@@ -175,4 +194,23 @@
     justify-content: center;
     padding: 1%;
     font-size: 110%;
+    background-color: var(--secondary);
+    font-size:1.5rem;
+    font-weight:bold;
   }
+
+.login-form, .signup-form{
+    font-size:1.25rem;
+    font-weight:bold;
+}
+
+#auth-button{
+    background-color: var(--light-dark);
+    font-size:1rem;
+    padding: 15px 25px 15px 25px;
+    text-transform: uppercase;}
+
+#username-login, #password-login, #username-signup, #password-signup{
+    font-size:1rem;
+}
+  
