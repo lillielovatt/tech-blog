@@ -4,6 +4,7 @@ async function editFormHandler(event) {
     const title = document
         .querySelector('input[name="post-title"]')
         .value.trim();
+    const post_url = document.querySelector('textarea[name="post-body"]').value;
 
     // capture id of post
     const id = window.location.toString().split("/")[
@@ -14,6 +15,7 @@ async function editFormHandler(event) {
         method: "PUT",
         body: JSON.stringify({
             title,
+            post_url,
         }),
         headers: {
             "Content-Type": "application/json",
