@@ -204,7 +204,7 @@
     font-weight:bold;
 }
 
-#auth-button{
+#auth-button-1, #auth-button-2{
     background-color: var(--light-dark);
     font-size:1rem;
     padding: 15px 25px 15px 25px;
